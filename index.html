@@ -2,16 +2,209 @@
 <html lang="ua">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>IAMPASS</title>
+    <!-- <link href="./../index.css" rel="stylesheet" /> -->
     <link href="build/css/index.css" rel="stylesheet" />
   </head>
   <body>
+    <script type="text/javascript">
+      states = [
+        "Не найден",
+        "Произведен",
+        "Дистрибьютор. Принято",
+        "Дистрибьютор. Отгружено",
+        "",
+        "Магазин. Принято",
+        "Магазин. Отгружено",
+        "Магазин. Продано",
+        "",
+        "",
+        "Персона. Мое",
+        "Персона. Подарок",
+        "Персона. Продан",
+        "Персона. Возврат",
+        "Персона. Утилизирован",
+      ];
+      months = [
+        "Янв",
+        "Фев",
+        "Мар",
+        "Апр",
+        "Май",
+        "Июн",
+        "Июл",
+        "Авг",
+        "Сен",
+        "Окт",
+        "Ноя",
+        "Дек",
+      ];
+      passport = {
+        id: "0k3e0V2s171g1b0u0m0F3E380f3T1s2A",
+        info: {
+          id: "290S0V0a3c2H3m2z0N060t0s3w182f2W",
+          brandId: 7222,
+          productId: 8055,
+          variantId: 1,
+          quantity: 1,
+          locationId: 7392,
+          name: "Samsung А51",
+          marking: null,
+          lot: "12",
+          specification:
+            "Безграничный экран Galaxy A51 оптимизирует визуальную симметрию. Теперь ты можешь играть, смотреть фильмы, бродить по сети и работать в многозадачном режиме без перерыва на ярком 6.5-дюймовом sAMOLED экране с FHD+ разрешением. Погрузись в контент с головой благодаря тонкой рамке дисплея и максимальной площади полезного пространства.",
+          date: 1586421163563,
+        },
+        state: 11,
+        owner: 7372,
+        product: {
+          name: "Samsung А51",
+          brand: "Фокстрот",
+          properties: [
+            {
+              name: "Артикул",
+              value: null,
+            },
+            {
+              name: "Штрих-коды",
+              value: null,
+            },
+            {
+              name: "Диагональ экрана",
+              value: "Более 6",
+            },
+            {
+              name: "Оперативная память",
+              value: "6 Гб",
+            },
+            {
+              name: "Память",
+              value: "128Гб",
+            },
+            {
+              name: "Цвет",
+              value: "Черный",
+            },
+            {
+              name: "Материал корпуса",
+              value: "Стекло Металл",
+            },
+          ],
+          images: [
+            "/Uploads/4bbbdffb-3061-4d2f-898b-bff3581777fe_reduced.jpeg",
+            "/Uploads/4ebbe7d5-ff45-47b9-b4e7-795302889018_reduced.jpeg",
+            "/Uploads/10238861-bacd-452f-80c9-65111b7ecd14_reduced.jpeg",
+            "/Uploads/19e148e7-fbe9-441f-afd7-c5521d24e561_reduced.jpeg",
+          ],
+          varAttrs: [
+            {
+              name: "Память",
+              value: "128Гб",
+            },
+          ],
+        },
+        history: [
+          {
+            id: 5467,
+            transaction: 0,
+            owner: 7392,
+            state: 1,
+            date: 1586421163563,
+            name: null,
+            info: null,
+            ownerName: "Отрадный 95к",
+          },
+          {
+            id: 5494,
+            transaction: 2121,
+            owner: 7392,
+            state: 5,
+            date: 1586422457470,
+            name: "Товар принят",
+            info: "Какой-то текст",
+            ownerName: "Отрадный 95к",
+          },
+          {
+            id: 5500,
+            transaction: 2125,
+            owner: 7392,
+            state: 6,
+            date: 1586422562733,
+            name: "Отгрузил продавцу товара",
+            info: "фыфыкыукукуке",
+            ownerName: "Отрадный 95к",
+          },
+          {
+            id: 5501,
+            transaction: 2126,
+            owner: 7392,
+            state: 7,
+            date: 1586422894130,
+            name: "Продано крупному клиенту",
+            info: "Много текста",
+            ownerName: "Отрадный 95к",
+          },
+          {
+            id: 5509,
+            transaction: 2134,
+            owner: 0,
+            state: 10,
+            date: 1586426670667,
+            name: "",
+            info: "",
+            ownerName: "Алексей weth Багинский",
+          },
+          {
+            id: 5510,
+            transaction: 2135,
+            owner: 0,
+            state: 11,
+            date: 1586426715903,
+            name: "",
+            info: "",
+            ownerName: "Алексей weth Багинский",
+          },
+          {
+            id: 5501,
+            transaction: 2126,
+            owner: 7392,
+            state: 7,
+            date: 1586422894130,
+            name: "Продано крупному клиенту",
+            info: "Много текста",
+            ownerName: "Отрадный 95к",
+          },
+          {
+            id: 5509,
+            transaction: 2134,
+            owner: 0,
+            state: 10,
+            date: 1586426670667,
+            name: "",
+            info: "",
+            ownerName: "Алексей weth Багинский",
+          },
+          {
+            id: 5509,
+            transaction: 2134,
+            owner: 0,
+            state: 10,
+            date: 1586426670667,
+            name: "",
+            info: "",
+            ownerName: "Алексей weth Багинский",
+          },
+        
+        ],
+        ownerName: "Алексей weth Багинский",
+      };
+    </script>
     <div class="conteiner header">
       <div class="background"></div>
       <div class="row">
         <div class="header__logo">
-          <!-- <img src="./assets/logo.png" alt="" /> -->
+          <!-- <img src="./../assets/logo.png" alt="" /> -->
           <p>IAMPASS</p>
         </div>
         <div class="header__sliderAndText">
@@ -23,9 +216,11 @@
             <div class="rightArrow" id="next"><span class="icon"></span></div>
           </div>
           <div class="textBlock">
-            <h1>Under Armour</h1>
-            <p>Женская черная ветровка W UA Quilifier OutRun the Storm</p>
-            <div class="atributes">
+            <h1 id="brand-name">Under Armour</h1>
+            <p id="product-name">
+              Женская черная ветровка W UA Quilifier OutRun the Storm
+            </p>
+            <div class="atributes" id="variant-attrs">
               <div class="atribute">
                 <p>Цвет:</p>
                 <span>Черный</span>
@@ -35,7 +230,7 @@
                 <span>XS</span>
               </div>
             </div>
-            <ul class="info">
+            <ul class="info" id="product-properties">
               <li><span>Артикул:</span> ref2934027-12335-213325233</li>
               <li><span>Состав:</span> 100% Арабика</li>
               <li><span>Регион:</span> Арабика</li>
@@ -56,7 +251,10 @@
         <div class="wrap">
           <p class="passport">Паспорт #2349204</p>
           <p class="passportCreated">Произведен: 12.12.2019.</p>
-          <p class="passportIndo">	Длинный текст спецификации текст длинный текст спецификации текст длинный текст.</p>
+          <p class="passportIndo">
+            Длинный текст спецификации текст длинный текст спецификации текст
+            длинный текст.
+          </p>
         </div>
       </div>
     </div>
@@ -88,11 +286,11 @@
       <div class="row">
         <div class="instalApi">
           <h2>Установите мобильное приложение <span>IAMPASS</span></h2>
-          <img src="./assets/google-play.svg" alt="" />
+          <img src="./../assets/google-play.svg" alt="" />
         </div>
         <div class="phones">
-          <img class="first" src="./assets/api2.png" alt="" />
-          <img class="second" src="./assets/api1.png" alt="" />
+          <img class="first" src="./../assets/api2.png" alt="" />
+          <img class="second" src="./../assets/api1.png" alt="" />
         </div>
       </div>
     </div>
@@ -100,8 +298,33 @@
       <div class="row">
         <div class="wrap">
           <h2>История</h2>
-          <div class="historyLine"></div>
-          <div class="history__elements">
+          <!-- <div class="historyLine"></div> -->
+          <div class="history__elements" id="passport-history">
+            <div class="elementsRow">
+              <div class="element">
+                <div class="datetime">
+                  <div class="date">
+                    May
+                    <p>21</p>
+                  </div>
+                  <span class="time">9:57</span>
+                </div>
+                <div class="elementBlock">
+                  <div class="title">
+                    <span class="name">Магазин</span>
+                    <span class="id">#6548762</span>
+                  </div>
+                  <div class="action">
+                    <img
+                      class="first"
+                      src="./../assets/historybasket.svg"
+                      alt=""
+                    />
+                    <span>Отгружен</span>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="element">
               <div class="datetime">
                 <div class="date">
@@ -112,11 +335,15 @@
               </div>
               <div class="elementBlock">
                 <div class="title">
-                  <span class="name">Магазин</span>
+                  <span class="name">Дистрибутор</span>
                   <span class="id">#6548762</span>
                 </div>
                 <div class="action">
-                  <img class="first" src="./assets/historybasket.svg" alt="" />
+                  <img
+                    class="first"
+                    src="./../assets/historybasket.svg"
+                    alt=""
+                  />
                   <span>Отгружен</span>
                 </div>
               </div>
@@ -135,7 +362,11 @@
                   <span class="id">#6548762</span>
                 </div>
                 <div class="action">
-                  <img class="first" src="./assets/historybasket.svg" alt="" />
+                  <img
+                    class="first"
+                    src="./../assets/historybasket.svg"
+                    alt=""
+                  />
                   <span>Отгружен</span>
                 </div>
               </div>
@@ -154,7 +385,11 @@
                   <span class="id">#6548762</span>
                 </div>
                 <div class="action">
-                  <img class="first" src="./assets/historybasket.svg" alt="" />
+                  <img
+                    class="first"
+                    src="./../assets/historybasket.svg"
+                    alt=""
+                  />
                   <span>Отгружен</span>
                 </div>
               </div>
@@ -173,7 +408,11 @@
                   <span class="id">#6548762</span>
                 </div>
                 <div class="action">
-                  <img class="first" src="./assets/historybasket.svg" alt="" />
+                  <img
+                    class="first"
+                    src="./../assets/historybasket.svg"
+                    alt=""
+                  />
                   <span>Отгружен</span>
                 </div>
               </div>
@@ -187,28 +426,12 @@
                 <span class="time">9:57</span>
               </div>
               <div class="elementBlock">
-                <div class="title">
-                  <span class="name">Дистрибутор</span>
-                  <span class="id">#6548762</span>
-                </div>
                 <div class="action">
-                  <img class="first" src="./assets/historybasket.svg" alt="" />
-                  <span>Отгружен</span>
-                </div>
-              </div>
-            </div>
-            <div class="element">
-              <div class="datetime">
-                <div class="date">
-                  May
-                  <p>21</p>
-                </div>
-                <span class="time">9:57</span>
-              </div>
-              <div class="elementBlock">
-              
-                <div class="action">
-                  <img class="first" src="./assets/historybasket.svg" alt="" />
+                  <img
+                    class="first"
+                    src="./../assets/historybasket.svg"
+                    alt=""
+                  />
                   <span>Произведен</span>
                 </div>
               </div>
@@ -232,7 +455,7 @@
               длинного текста
             </p>
           </div>
-          <img src="./assets/assistant_1.png" alt="" />
+          <img src="./../assets/assistant_1.png" alt="" />
         </div>
         <div class="assistant__info">
           <div class="text">
@@ -245,7 +468,7 @@
               длинного текста
             </p>
           </div>
-          <img src="./assets/assistant_2.svg" alt="" />
+          <img src="./../assets/assistant_2.svg" alt="" />
         </div>
         <div class="assistant__info">
           <div class="text">
@@ -258,7 +481,7 @@
               длинного текста
             </p>
           </div>
-          <img src="./assets/assistant_3.svg" alt="" />
+          <img src="./../assets/assistant_3.svg" alt="" />
         </div>
         <div class="assistant__info">
           <div class="text">
@@ -271,7 +494,7 @@
               длинного текста
             </p>
           </div>
-          <img src="./assets/assistant_4.svg" alt="" />
+          <img src="./../assets/assistant_4.svg" alt="" />
         </div>
       </div>
     </div>
@@ -279,7 +502,7 @@
       <div class="background"></div>
       <div class="row">
         <div class="footer__text">
-          <h3>Установите мобильное приложение <span>IAMPASS</span></h3>
+          <h3>Установите мобильное приложение<span> IAMPASS</span></h3>
           <p>
             Очень длинное описание в две строки, шаблон для очень-очень-ооочень
             длинного текста Очень длинное описание в две строки, шаблон для
@@ -287,9 +510,10 @@
             строки.
           </p>
         </div>
-        <img src="./assets/google-play.svg" alt="" />
+        <img src="./../assets/google-play.svg" alt="" />
       </div>
     </div>
+    <!-- <script src="./../all.js"></script> -->
+    <script src="build/js/main.js"></script>
   </body>
 </html>
-<script src="build/js/all.js"></script>

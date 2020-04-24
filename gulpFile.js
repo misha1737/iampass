@@ -27,7 +27,7 @@ function styles(){
 
 function scripts(){
 	    return gulp.src('./src/js/*.js')
-    .pipe(concat('all.js'))
+    .pipe(concat('main.js'))
     .pipe(uglify({
     	toplevel: true
 		}))
